@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+main {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #333;
+}
+
+ul.course-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.course-links li {
+    margin-bottom: 8px;
+}
+
+header {
+    background-color: #218ba5;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+footer {
+    text-align: center;
+    background-color: #218ba5;
+    color: white;
+}
+
+img {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
