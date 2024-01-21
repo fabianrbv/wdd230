@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: block;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: 5px;
+    max-width: 800px;
+    background-color: #8DA1B9;
+    color: rgb(255, 255, 255);
+}
+
+.margen {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3%;
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.caja {
+    text-align: center;
+    background-color: #DBC7BE;
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    padding: 2%;
+    margin: 10px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+}
+
+.titulos {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #b3a39d;
+}
+
+h3 {
+    padding: 3%;
+}
+
+footer {
+    text-align: center;
+    background-color: #19505d;
+    color: white;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .margen {
+        grid-template-columns: 1fr 1fr;
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .margen {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
