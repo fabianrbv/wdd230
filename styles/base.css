@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    background-color: #19515d56;
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -26,7 +26,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -43,7 +43,7 @@ h1 {
 nav {
     background-color: #19505d;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 600px;
 }
 
 nav ul {
@@ -110,9 +110,8 @@ header {
     background-color: #19505d;
     color: white;
     text-align: center;
-    padding: 1em;
     margin: 0 auto;
-    max-width: 550px;
+    max-width: 600px;
 }
 
 footer {
@@ -122,7 +121,8 @@ footer {
 }
 
 img {
-    width: 50%;
+    width: 45%;
     max-width: 100%;
     height: auto;
+    padding: 1em;
 }
