@@ -58,26 +58,6 @@ nav a:hover {
     text-decoration: overline;
 }
 
-#menu {
-    display: none;
-    /* Ocultar el botón de hamburguesa por defecto */
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    color: #000;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "X";
-}
-
 /* mobile views (menor a 640px) */
 
 @media (max-width: 639px) {
@@ -111,6 +91,26 @@ nav a:hover {
     /* cuando se hace clic en el botón, se muestra/oculta la navegación */
     .open a {
         display: block;
+    }
+
+    #menu {
+        display: none;
+        /* Ocultar el botón de hamburguesa por defecto */
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "X";
     }
 }
 
