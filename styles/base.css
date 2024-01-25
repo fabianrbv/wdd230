@@ -58,44 +58,9 @@ nav a:hover {
     text-decoration: overline;
 }
 
-/* mobile views (menor a 640px) */
-
-@media (max-width: 639px) {
+@media (max-width: 640px) {
     #menu {
         display: block;
-        /* Mostrar el botón de hamburguesa solo en dispositivos pequeños */
-    }
-
-    .navigation {
-        display: none;
-        /* Ocultar la navegación por defecto en dispositivos pequeños */
-        flex-direction: column;
-        background-color: #333;
-        color: #fff;
-    }
-
-    .navigation a {
-        display: block;
-        padding: 1rem;
-        text-align: center;
-        text-decoration: none;
-        color: #fff;
-    }
-
-    .navigation a:hover {
-        background-color: #bbb;
-        color: #333;
-        font-weight: 700;
-    }
-
-    /* cuando se hace clic en el botón, se muestra/oculta la navegación */
-    .open a {
-        display: block;
-    }
-
-    #menu {
-        display: none;
-        /* Ocultar el botón de hamburguesa por defecto */
         font-size: 1.5rem;
         border: 0;
         background: none;
@@ -111,6 +76,31 @@ nav a:hover {
 
     #menu.open::before {
         content: "X";
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
     }
 }
 
