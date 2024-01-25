@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var lastModifiedDate = document.lastModified;
     lastModifiedElement.textContent = "Last modified: " + lastModifiedDate;
 
+    // Manejar el evento click del botón de menú
     const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
 
