@@ -12,4 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obtener la fecha de última modificación del documento y establecerla en el párrafo
     var lastModifiedDate = document.lastModified;
     lastModifiedElement.textContent = "Last modified: " + lastModifiedDate;
+
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
+
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+    });
 });
