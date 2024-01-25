@@ -81,12 +81,13 @@ nav a:hover {
     .navigation {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #19505d;
         color: #fff;
     }
 
     .navigation.open {
         display: flex;
+        justify-content: center;
     }
 
     .navigation a {
@@ -95,12 +96,6 @@ nav a:hover {
         text-align: center;
         text-decoration: none;
         color: #fff;
-    }
-
-    .navigation a:hover {
-        background-color: #bbb;
-        color: #333;
-        font-weight: 700;
     }
 }
 
