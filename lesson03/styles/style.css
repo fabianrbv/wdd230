@@ -1,173 +1,212 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
 header {
-    text-align: center;
-    color: #ffffff;
-    background-color: #457B9D;
-    font-family:Arial, Helvetica, sans-serif;
-  }
+  text-align: center;
+  color: #ffffff;
+  background-color: #457B9D;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 nav {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-footer   {
-    background-color: #457B9D;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+footer {
+  background-color: #457B9D;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-footer h3{
-    color: #F1FAEE;
-    text-decoration: none ;
+footer h3 {
+  color: #F1FAEE;
+  text-decoration: none;
 }
 
 footer a {
-    color: #F1FAEE;
-    text-decoration: none;
+  color: #F1FAEE;
+  text-decoration: none;
 }
 
-main{
-    display: block;
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+main {
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
-.left{
-    margin-left:2cm;
-    text-align: left;
-  }
+
+.left {
+  margin-left: 2cm;
+  text-align: left;
+}
 
 :root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #457B9D   ;
-    --secondary-color: #A8DADC ;
-    --accent1-color: #F1FAEE;
-    --accent2-color: #E63946;
-  
-    /* change the values below to your chosen font(s) */
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif;
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #E63946;  /* headlines on a white background */ 
-    --headline-color-on-color: #F1FAEE; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #E63946; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: #F1FAEE; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #457B9D  ;
-    --nav-link-color: #F1FAEE;
-    --nav-background-color: #457B9D;
-    --nav-hover-link-color: #457B9D;
-    --nav-hover-background-color: #A8DADC;
-  }
-  
-  
-  /*  Look around below...but DON'T CHANGE ANYTHING! */
-  
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-size: 18px;
-    text-align: center;
-  }
-  img {
-    display: block;
-    margin: 0 auto;
-    max-width: 500px
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-  }
+  /* change the values below to your colors from your palette */
+  --primary-color: #457B9D;
+  --secondary-color: #A8DADC;
+  --accent1-color: #F1FAEE;
+  --accent2-color: #E63946;
 
-  li{
-    margin: 4%;
-    text-align: justify;
-    line-height:0%;
-  }
+  /* change the values below to your chosen font(s) */
+  --heading-font: "IM Fell French Canon SC";
+  --paragraph-font: Lato, Helvetica, sans-serif;
 
-  h2 {
-    text-align: center;
-  }
-  hr {
-    height: 3px;
-    margin: 35px 0;
-    background: var(--accent1-color);
-  }
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #E63946;
+  /* headlines on a white background */
+  --headline-color-on-color: #F1FAEE;
+  /* headlines on a colored background */
+  --paragraph-color-on-white: #E63946;
+  /* paragraph text on a white background */
+  --paragraph-color-on-color: #F1FAEE;
+  /* paragraph text on a colored background */
+  --paragraph-background-color: #457B9D;
+  --nav-link-color: #F1FAEE;
+  --nav-background-color: #457B9D;
+  --nav-hover-link-color: #457B9D;
+  --nav-hover-background-color: #A8DADC;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+li {
+  margin: 4%;
+  text-align: justify;
+  line-height: 0%;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+header>h1,
+header>h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+
+}
+
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+@media (min-width: 640px) {
   header {
-    padding: 1em;
-    text-align: center;
-    color: var(--paragraph-color-on-color);
-    background-color: var(--paragraph-background-color);
-  }
-  header > h1, header > h2 {
-    color: var(--headline-color-on-color);
-  }
-  
-  p {
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color);
-    padding: 1em;
-  }
-  .colors {
     width: 100%;
-    min-width: 350px;
-    margin: 30px auto;
-    text-align: center;
   }
-  .colors th {
-    background-color: #999;
-  }
-  .colors td{
-    width: 25%;
-    height: 3em;
-  }
-  
-  .primary {
-    background-color: var(--primary-color);
-  }
-  .secondary {
-    background-color: var(--secondary-color);
-  }
-  .accent1 {
-    background-color: var(--accent1-color);
-  }
-  .accent2{
-    background-color: var(--accent2-color);
-  }
-  
-  p.colored {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-  }
-  
+
   nav {
-    background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
+    width: 100%;
   }
-  nav  {
-    list-style-type: none;
-    display: flex;
-  
+
+  img {
+    max-width: 100%;
   }
-  nav a {
-    padding:1em;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
-  
-  }
-  nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-  }
-  nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-  }
-  
- 
+}
