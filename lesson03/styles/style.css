@@ -82,7 +82,13 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 500px
+  max-width: 350px
+}
+
+#large {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px
 }
 
 h1,
@@ -204,9 +210,5 @@ nav a:hover {
 
   nav {
     width: 100%;
-  }
-
-  img {
-    max-width: 100%;
   }
 }
