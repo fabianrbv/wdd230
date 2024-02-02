@@ -1,127 +1,214 @@
-.nav{
-    display: flex;
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+header {
+	text-align: center;
+	color: #ffffff;
+	background-color: #457B9D;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Header using Flexbox */
+nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+footer {
+	background-color: #457B9D;
+	margin-top: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer h3 {
+	color: #F1FAEE;
+	text-decoration: none;
+}
+
+footer a {
+	color: #F1FAEE;
+	text-decoration: none;
+}
+
+main {
+	display: block;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.left {
+	margin-left: 2cm;
+	text-align: left;
+}
+
+:root {
+	/* change the values below to your colors from your palette */
+	--primary-color: #457B9D;
+	--secondary-color: #A8DADC;
+	--accent1-color: #F1FAEE;
+	--accent2-color: #E63946;
+
+	/* change the values below to your chosen font(s) */
+	--heading-font: "IM Fell French Canon SC";
+	--paragraph-font: Lato, Helvetica, sans-serif;
+
+	/* these colors below should be chosen from among your palette colors above */
+	--headline-color-on-white: #E63946;
+	/* headlines on a white background */
+	--headline-color-on-color: #F1FAEE;
+	/* headlines on a colored background */
+	--paragraph-color-on-white: #E63946;
+	/* paragraph text on a white background */
+	--paragraph-color-on-color: #F1FAEE;
+	/* paragraph text on a colored background */
+	--paragraph-background-color: #457B9D;
+	--nav-link-color: #F1FAEE;
+	--nav-background-color: #457B9D;
+	--nav-hover-link-color: #457B9D;
+	--nav-hover-background-color: #A8DADC;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    font-family: hebrew;
-    color: navy;
-	padding: 0;
-	margin: 0;
+	max-width: 1200px;
+	margin: 0 auto;
+	font-size: 18px;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 350px
+}
+
+#large {
+	display: block;
+	margin: 0 auto;
+	max-width: 700px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--heading-font);
+	color: var(--headline-color-on-white);
+}
+
+li {
+	margin: 4%;
+	text-align: justify;
+	line-height: 0%;
+}
+
+h2 {
+	text-align: center;
+}
+
+hr {
+	height: 3px;
+	margin: 35px 0;
+	background: var(--accent1-color);
 }
 
 header {
-	background-color: #fff;
-	padding: 5px 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 900px;
-	margin: 0 auto;
-	border-bottom: 1px solid #bbb;
+	padding: 1em;
+	text-align: center;
+	color: var(--paragraph-color-on-color);
+	background-color: var(--paragraph-background-color);
 }
 
-.logo {
-	display: flex;
-	align-items: flex-start;
-    height: auto;
-    margin-top: 5%;
-	margin-left: 1rem;
-    padding: 0%;
+header>h1,
+header>h2 {
+	color: var(--headline-color-on-color);
 }
 
-.logo img {
-	width: 80px;
-	height: auto;
+p {
+	font-family: var(--paragraph-font);
+	color: var(--paragraph-color);
+	padding: 1em;
 }
 
-.headings {
-	display: flex;
-	flex-direction: column;
-	margin-left: .5rem;
+.colors {
+	width: 100%;
+	min-width: 350px;
+	margin: 30px auto;
+	text-align: center;
 }
 
-.headings h1 {
-	font-size: 1.5rem;
+.colors th {
+	background-color: #999;
 }
 
-.m {
-	letter-spacing: 1pt;
-	color: forestgreen;
-	font-weight: 700;
-	font-size: 0.8rem;
+.colors td {
+	width: 25%;
+	height: 3em;
 }
 
-.social {
-    margin-right: 1.5rem;
-    margin-top: 5%;
-    flex: none;
-    padding: 1%;
+.primary {
+	background-color: var(--primary-color);
 }
 
-/* JavaScript Dates (Intl) */
-
-.date{
-    display: flex;
-    display: block;
-	margin: 0.5rem;
-	border: 1px solid #bbb;
-	padding: 0.75rem;
-	background-color: #eee;
+.secondary {
+	background-color: var(--secondary-color);
 }
 
-/* Responsive 'Hamburger Menu' */
+.accent1 {
+	background-color: var(--accent1-color);
+}
 
-/* Small/Phone View ***************/
+.accent2 {
+	background-color: var(--accent2-color);
+}
+
+p.colored {
+	background-color: var(--paragraph-background-color);
+	color: var(--paragraph-color-on-color);
+}
+
 nav {
-	margin: 0 auto;
-	max-width: 760px;
-	background-color: tomato;
+	background-color: var(--nav-background-color);
+	line-height: 3em;
+	text-align: center;
+	font-size: 1.2em;
 }
-.navigation {
-	list-style: none;
-	padding: 0;
-}
-.navigation li:first-child {
+
+nav {
+	list-style-type: none;
 	display: flex;
-    justify-content: right;
+
 }
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
+
+nav a {
+	padding: 1em;
+	min-width: 120px;
 	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+	padding: 10px;
+
 }
 
-.navigation a.ham::before {
-    display: flex;
-    justify-content: center;
-	content: "🍔 ";
+nav a:link,
+nav a:visited {
+	color: var(--nav-link-color);
 }
 
-.navigation a:hover {
-	color: white;
-	background-color: black;
+nav a:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
 }
 
-.responsive li {
-	display: block;
-}
+@media (min-width: 640px) {
+	header {
+		width: 100%;
+	}
 
-.responsive a.ham::before {
-	content: "❌ ";
+	nav {
+		width: 100%;
+	}
 }

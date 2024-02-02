@@ -1,24 +1,15 @@
-/* JavaScript Dates (Intl) */
+document.addEventListener("DOMContentLoaded", function () {
+	// Obtener el elemento span con el ID "currentYear"
+	var currentYearElement = document.getElementById("currentYear");
 
-// select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
-const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
+	// Obtener el elemento p con el ID "lastModified"
+	var lastModifiedElement = document.getElementById("lastModified");
 
-// derive the current date using a date object
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
+	// Obtener el año actual y establecerlo en el span
+	var currentYear = new Date().getFullYear();
+	currentYearElement.textContent = currentYear;
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
-
-
-// Responsive 'Hamburger Menu'
-
-const hambutton = document.querySelector('.ham');
-const mainnav = document.querySelector('.navigation')
-
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-// To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+	// Obtener la fecha de última modificación del documento y establecerla en el párrafo
+	var lastModifiedDate = document.lastModified;
+	lastModifiedElement.textContent = "Last modified: " + lastModifiedDate;
+});
