@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Obtener la fecha de última modificación del documento y establecerla en el párrafo
 	var lastModifiedDate = document.lastModified;
-	lastModifiedElement.textContent = "Last modified: " + lastModifiedDate;
+	lastModifiedElement.textContent = lastModifiedDate;
 
 	// Manejar el evento click del botón de menú
 	const hamButton = document.querySelector('#menu');
