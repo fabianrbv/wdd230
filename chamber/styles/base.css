@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:400|IM+Fell+French+Canon+SC&display=swap');
 
 /* Reset some default styles */
 body,
-h1,
-h2,
 p,
 ul,
 li {
@@ -22,7 +20,6 @@ header {
 	color: #ffffff;
 	display: flex;
 	align-items: center;
-	font-family: var(--heading-font);
 	padding: 0.5em;
 }
 
@@ -31,7 +28,7 @@ header img {
 	align-items: flex-start;
 }
 
-header h1 {
+h1 {
 	padding: 20px;
 	font-size: 1.5em;
 }
@@ -42,7 +39,7 @@ nav.social-images {
 }
 
 nav.social-images img {
-	width: 60px;
+	width: 50px;
 	height: auto;
 	margin-right: 20px;
 }
@@ -98,22 +95,16 @@ main {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: var(--headline-color-on-color);
-	font-family: var(--heading-font);
 }
 
 /* Call to Action Styles */
 .cta {
-	background-color: var(--primary-color);
-	color: var(--accent1-color);
 	padding: 20px;
 	margin-top: 20px;
 }
 
 /* Events Section Styles */
 .events {
-	background-color: var(--secondary-color);
-	color: var(--accent1-color);
 	padding: 20px;
 	margin-top: 20px;
 }
@@ -124,8 +115,6 @@ main {
 
 /* Weather Section Styles */
 .weather {
-	background-color: var(--primary-color);
-	color: var(--accent1-color);
 	padding: 20px;
 	margin-top: 20px;
 }
@@ -137,13 +126,10 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	color: var(--accent1-color);
 	padding: 15px;
 }
 
-footer h3,
 footer a {
-	color: var(--accent1-color);
 	text-decoration: none;
 }
 
@@ -198,6 +184,23 @@ footer a {
 	iframe {
 		width: 100%;
 		height: 300px;
+	}
+
+	nav.social-images {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		/* Alinear a la izquierda */
+		margin-top: 10px;
+		/* Agregar margen superior para separar de otros elementos */
+	}
+
+	nav.social-images img {
+		width: 30px;
+		/* Ajustar el tamaño de los logos para pantallas pequeñas */
+		height: auto;
+		margin-right: 10px;
+		/* Espaciado entre logos */
 	}
 }
 
