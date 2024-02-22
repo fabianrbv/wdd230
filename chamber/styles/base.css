@@ -24,7 +24,7 @@ header {
 }
 
 header img {
-	width: 150px;
+	width: 15%;
 	align-items: flex-start;
 }
 
@@ -39,7 +39,7 @@ nav.social-images {
 }
 
 nav.social-images img {
-	width: 50px;
+	width: 20%;
 	height: auto;
 	margin-right: 20px;
 }
@@ -49,12 +49,9 @@ nav {
 	margin: 0 auto;
 }
 
-nav ul {
+nav ul li {
 	display: flex;
 	list-style-type: none;
-}
-
-nav ul li {
 	flex: 1 1 auto;
 }
 
@@ -161,16 +158,17 @@ footer a {
 	.navigation {
 		display: none;
 		flex-direction: column;
-		background-color: #19505d;
+		background-color: #457B9D;
+		opacity: .8;
 		color: #fff;
-		height: auto;
-		transition: height 0.3s;
+		position: absolute;
+		top: 60px;
+		right: 0;
 	}
 
 	.navigation.open {
 		display: flex;
 		justify-content: center;
-		height: auto;
 	}
 
 	.navigation a {
@@ -190,17 +188,13 @@ footer a {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		/* Alinear a la izquierda */
 		margin-top: 10px;
-		/* Agregar margen superior para separar de otros elementos */
 	}
 
 	nav.social-images img {
 		width: 30px;
-		/* Ajustar el tamaño de los logos para pantallas pequeñas */
 		height: auto;
 		margin-right: 10px;
-		/* Espaciado entre logos */
 	}
 }
 
