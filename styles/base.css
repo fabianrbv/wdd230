@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -25,7 +24,7 @@ header {
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     position: relative;
-    max-width: 767px;
+    max-width: 733px;
     margin: 0 auto;
 }
 
@@ -69,7 +68,8 @@ nav a:hover {
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .overlay {
@@ -84,7 +84,6 @@ nav a:hover {
 
 .herolabel {
     position: absolute;
-    text-align: center;
     top: 25px;
     left: 16px;
     background: radial-gradient(#fff, #4D5B97);
@@ -92,15 +91,14 @@ nav a:hover {
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.75;
-    max-width: 23%;
-    font-size: 1rem;
 }
 
 .herolabel p {
     margin: 0;
-    font-weight: normal;
+    padding: .25rem;
+    margin-right: 0;
+    font-weight: 700;
     font-family: "Great Vibes", serif;
-    max-width: 40%;
     font-size: 1.2rem;
 }
 
@@ -184,7 +182,7 @@ main {
 
 div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     max-width: 767px;
 }
 
