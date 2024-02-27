@@ -57,12 +57,14 @@ nav a:hover {
 
 .hero {
     position: relative;
-    max-width: 767px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0;
 }
 
 .picture {
     width: 100%;
+    max-width: 100%;
 }
 
 .hero img {
@@ -90,14 +92,16 @@ nav a:hover {
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.75;
+    max-width: 23%;
+    font-size: 1rem;
 }
 
 .herolabel p {
     margin: 0;
-    padding: 1rem;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: normal;
     font-family: "Great Vibes", serif;
+    max-width: 40%;
+    font-size: 1.2rem;
 }
 
 
@@ -169,8 +173,6 @@ nav a:hover {
 }
 
 main {
-    display: grid;
-    gap: 20px;
     justify-content: center;
     max-width: 767px;
     margin: 0 auto;
