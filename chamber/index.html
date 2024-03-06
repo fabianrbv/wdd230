@@ -23,7 +23,7 @@
 <body>
 
     <header>
-        <img src="images/logo.PNG" alt="page logo">
+        <img src="images/logo.webp" alt="page logo">
         <h1>Bogotá Chamber of Commerce</h1>
         <nav class="social-images">
             <img src="images/facebook.png" alt="facebook-logo">
@@ -44,7 +44,16 @@
         </div>
     </header>
 
-    <img class="foto-fondo" src="images/fondocopia.jpg" alt="Chamber of Commerce Hero Image">
+    <!-- <img class="foto-fondo" src="images/fondocopia.jpg" alt="Chamber of Commerce Hero Image"> -->
+    <div class="container">
+        <picture>
+            <source srcset="images/wdd230small-org.jpg" media="(max-width: 640px)">
+            <source srcset="images/wdd230medium-org.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+            <source srcset="images/wdd230large-org.jpg" media="(min-width: 1201px)">
+            <img src="images/wdd230medium-org.jpg" alt="hero image">
+            <div class="overlay">Medium</div>
+        </picture>
+    </div>
 
     <main>
         <section class="hero">
@@ -67,10 +76,11 @@
         </section>
 
         <section class="weather">
-            <!-- Weather card section goes here -->
-            <h2>Weather Forecast</h2>
-            <p>Current weather: Sunny</p>
-            <!-- Add more weather-related information as needed -->
+            <div id="weather-section">
+                <p>Temperature: <span id="temperature">...</span> °F</p>
+                <p>Wind Speed: <span id="wind-speed">...</span> mph</p>
+                <p>Wind Chill: <span id="wind-chill">N/A</span> °F</p>
+            </div>
         </section>
 
     </main>
@@ -81,6 +91,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="../chamber/scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

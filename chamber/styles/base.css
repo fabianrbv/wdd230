@@ -9,6 +9,16 @@ li {
 	padding: 0;
 }
 
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+picture {
+	max-width: 100%;
+}
+
 #container {
 	background-color: #f8f8f8;
 	position: fixed;
