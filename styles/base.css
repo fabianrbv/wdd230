@@ -186,6 +186,11 @@ main {
     max-width: 767px;
 }
 
+.card p {
+    padding: 5px;
+    /* Ajusta el valor según tus preferencias */
+}
+
 .navigation {
     flex-direction: row;
     max-width: 767px;

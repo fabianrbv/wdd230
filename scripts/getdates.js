@@ -22,3 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
         hamButton.classList.toggle('open');
     });
 });
+
+function updatePageCounter() {
+    let pageVisits = localStorage.getItem('pageVisits') || 0;
+
+    pageVisits++;
+
+    localStorage.setItem('pageVisits', pageVisits);
+
+    document.getElementById('pageCounter').textContent = pageVisits;
+}
+
+updatePageCounter();
