@@ -45,15 +45,37 @@
     </header>
 
     <!-- <img class="foto-fondo" src="images/fondocopia.jpg" alt="Chamber of Commerce Hero Image"> -->
-    <div class="container">
-        <picture>
-            <source srcset="images/wdd230small-org.jpg" media="(max-width: 640px)">
-            <source srcset="images/wdd230medium-org.jpg" media="(min-width: 641px) and (max-width: 1200px)">
-            <source srcset="images/wdd230large-org.jpg" media="(min-width: 1201px)">
-            <img src="images/wdd230medium-org.jpg" alt="hero image">
-            <div class="overlay">Medium</div>
-        </picture>
+    <div class="container" id="smallContainer">
+        <div class="picture-container">
+            <picture>
+                <source srcset="images/wdd230small-org.jpg" media="(max-width: 640px)">
+                <img src="images/wdd230small-org.jpg" alt="small hero image">
+            </picture>
+            <div class="overlay">Small</div>
+        </div>
     </div>
+
+    <div class="container" id="mediumContainer">
+        <div class="picture-container">
+            <picture>
+                <source srcset="images/wdd230medium-org.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+                <img src="images/wdd230medium-org.jpg" alt="medium hero image">
+            </picture>
+            <div class="overlay">Medium</div>
+        </div>
+    </div>
+
+    <div class="container" id="largeContainer">
+        <div class="picture-container">
+            <picture>
+                <source srcset="images/wdd230large-org.jpg" media="(min-width: 1201px)">
+                <img src="images/wdd230large-org.jpg" alt="large hero image">
+            </picture>
+            <div class="overlay">Large</div>
+        </div>
+    </div>
+
+
 
     <main>
         <section class="hero">
@@ -76,10 +98,20 @@
         </section>
 
         <section class="weather">
+            <h2>Weather</h2>
+            <div id="databox">
+                <span>Temperature Fahrenheit:
+                    <input type="number" id="temperature">
+                </span>
+                <br>
+                <span>Wind Speed in MPH: <input type="number" id="windSpeed">
+                </span>
+                <br />
+                <button type="button" onclick="calculateWindChill()">Calculate Wind Chill</button>
+            </div>
+            <br>
             <div id="weather-section">
-                <p>Temperature: <span id="temperature">...</span> °F</p>
-                <p>Wind Speed: <span id="wind-speed">...</span> mph</p>
-                <p>Wind Chill: <span id="wind-chill">N/A</span> °F</p>
+                <p>Wind Chill: <span id="result">N/A</span></p>
             </div>
         </section>
 
@@ -92,6 +124,7 @@
     </footer>
     <script src="../chamber/scripts/script.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/imageLabels.js"></script>
 </body>
 
 </html>
