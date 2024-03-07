@@ -56,20 +56,15 @@ li {
 	gap: 20px;
 }
 
-.sidebar {
-	padding: 20px;
-}
-
 .sidebar-content {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-center;
 	text-align: center;
 	width: 100%;
 	max-width: 500px;
 	height: auto;
-	margin-bottom: 20px;
-	padding: 55px;
+	margin-bottom: 130px;
+	padding: 10px;
 }
 
 .gallery img {
@@ -104,7 +99,6 @@ li {
 	width: 25px;
 	height: 25px;
 	transform: scale(.7);
-	background-color: linear-gradient(145deg), #d8d8d8, #ffffff;
 	border-radius: 25px;
 	box-shadow: 3px 3px 8px #0000007b,
 		-3px -3px 8px #0600006e;
@@ -332,6 +326,16 @@ footer a {
 	.grid-container {
 		grid-template-columns: 1fr;
 		/* Cambia a una sola columna en pantallas pequeñas */
+	}
+
+	.sidebar-content {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+		margin-bottom: 20px;
 	}
 }
 
