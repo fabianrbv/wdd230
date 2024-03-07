@@ -9,6 +9,12 @@ li {
 	padding: 0;
 }
 
+#message {
+	margin-top: 10px;
+	color: var(--accent2-color);
+	text-align: center;
+}
+
 .container {
 	position: relative;
 	display: none;
@@ -43,6 +49,51 @@ li {
 #largeContainer.active {
 	display: block;
 }
+
+/* Nuevos estilos para cumplir con los requisitos */
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 20px;
+}
+
+.sidebar {
+	padding: 20px;
+}
+
+/* En el bloque de estilos del sidebar */
+.sidebar-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-center;
+	text-align: center;
+	width: 100%;
+	/* Ajustar el ancho al 100% del contenedor */
+	max-width: 500px;
+	/* Establecer un ancho máximo para controlar el tamaño */
+	height: auto;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+/* Efecto hover para las imágenes en la galería */
+.gallery img {
+	width: 100%;
+	/* Ajustar el ancho al 100% del contenedor */
+	max-width: 500px;
+	/* Establecer un ancho máximo para controlar el tamaño */
+	height: auto;
+	/* Mantener la proporción de aspecto original */
+
+	transition: transform 0.3s;
+}
+
+.gallery img:hover {
+	transform: scale(1.1);
+}
+
+/* Resto de tu archivo CSS actual */
+
 
 #container {
 	background-color: #f8f8f8;

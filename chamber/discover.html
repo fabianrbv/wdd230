@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogotá Chamber of Commerce</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development, Fabian Ricardo Betancourt Vargas, Chamber of Commerce">
+    <meta name="author" content="Fabian Betancourt">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://en.wikipedia.org/wiki/Chamber_of_commerce#/media/File:65_Liberty_Street_9484.JPG">
+    <meta property="og:url" content="https://fabianrbv.github.io/wdd230/chamber/index.html">
+    <link rel="icon" href="favicon-chamber.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.webp" alt="page logo">
+        <h1>Bogotá Chamber of Commerce</h1>
+        <nav class="social-images">
+            <img src="images/facebook.png" alt="facebook-logo">
+            <img src="images/instagram.png" alt="instagram-logo">
+            <img src="images/twitter.png" alt="twitter-logo">
+        </nav>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+        <div id="container">
+            <div class="toggle"></div>
+        </div>
+    </header>
+
+    <img class="foto-fondo" src="images/fondocopia.jpg" alt="Chamber of Commerce Hero Image">
+
+    <div id="message"></div>
+
+    <main class="grid-container" class="sidebar">
+        <div id="sidebar">
+            <div class="sidebar-content">
+                <h1>The historic center of Bogotá</h1>
+                <p>Located in the La Candelaria neighborhood , it preserves the memory of the small town that was Bogotá
+                    in
+                    its
+                    beginnings. Its narrow streets and colonial mansions are the nerve center of Bogotá culture . In
+                    addition to
+                    bringing together most of the tourist places of historical interest , this area is mixed with the
+                    modernity
+                    of commerce, universities and residential projects .</p>
+            </div>
+            <div class="sidebar-content">
+                <h1>Colon Theater</h1>
+                <p>In La Candelaria, inaugurated on October 27, 1892. Its architecture and decoration is inspired by the
+                    Garnier Theater in Paris . This venue is used for chamber concerts, conferences, plays and dance
+                    performances, among others.</p>
+            </div>
+            <div class="sidebar-content">
+                <h1>Gold Museum</h1>
+                <p>In the center there is also the Gold Museum , which has among its acquisitions gold, tumbaga,
+                    ceramics,
+                    stone and wood objects that were once the result of the most advanced and complex technology of the
+                    native
+                    groups of the American continent.</p>
+            </div>
+            <div class="sidebar-content">
+                <h1>Monserrate Hill</h1>
+                <p>To the east of the downtown area, the symbol par excellence of Bogotá, is located one of the most
+                    emblematic
+                    tourist places of the capital: the Monserrate hill. It is located 3,152 meters above sea level and
+                    houses
+                    the Sanctuary of the Fallen Lord at its summit , a place of religious pilgrimage. It has two
+                    luxurious
+                    restaurants, Casa San Isidro and Santa Clara , which offer a variety of national and international
+                    dishes.
+                </p>
+            </div>
+            <div class="sidebar-content">
+                <h1>La Macarena neighborhood</h1>
+                <p>Towards the north, the National Museum is located . It was founded by law in 1823, which makes it the
+                    oldest
+                    museum in Colombia . Although it has had several locations, since 1948 it has been located in the
+                    old
+                    Cundinamarca Central Penitentiary, which was the most important prison in the country for almost 72
+                    years .
+                    In addition to the interesting history of its facilities, the museum houses a wide collection of
+                    artistic
+                    pieces that tell much of the history of Colombia.</p>
+            </div>
+            <div class="sidebar-content">
+                <h1>Andrés Carne de Res</h1>
+                <p>In terms of gastronomy and nightlife , without a doubt Andrés Carne de Res is a must-see destination.
+                    Its
+                    main headquarters, located in Chía , a municipality 20 minutes from the capital, has been one of the
+                    favorites for more than two decades for foreigners and nationals looking to live a typical Colombian
+                    experience. This establishment was included in the book 333 places in Colombia to see before you die
+                    .
+                    Currently, the restaurant-bar has a branch in Bogotá: Andrés DC .</p>
+            </div>
+            <div class="sidebar-content">
+                <h1>Salt Cathedral of Zipaquira</h1>
+                <p>Regarding the options near the city, a visit to the Zipaquirá Salt Cathedral —considered the First
+                    Wonder
+                    of
+                    Colombia—is essential. This monument is built 180 meters underground in a large salt mine. Deep
+                    inside
+                    the
+                    majestic cathedral there is a gigantic 80-meter water mirror that offers a unique optical effect.
+                </p>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="images/discover1.webp" alt="discover1" loading="lazy">
+
+            <img src="images/discover2.webp" alt="discover2" loading="lazy">
+
+            <img src="images/discover3.webp" alt="discover3" loading="lazy">
+
+            <img src="images/discover4.webp" alt="discover4" loading="lazy">
+
+            <img src="images/discover5.webp" alt="discover5" loading="lazy">
+
+            <img src="images/discover6.webp" alt="discover6" loading="lazy">
+
+            <img src="images/discover7.webp" alt="discover7" loading="lazy">
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact Us: Bogota-Chamber-of-Commerce.com | Phone: 123-456-7890</p>
+        <p>&#169; <span id="currentYear"></span> Fabian Betancourt | WDD 230 Project | Last Modified:</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/imageLabels.js"></script>
+</body>
+
+</html>
