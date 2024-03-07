@@ -3,42 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tablebuild</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tables</title>
     <link rel="stylesheet" href="styles/tablebuild.css">
-</head>
 
 <body>
-    <table>
+    <table id="table1">
         <caption>Table 1: Account Feature Comparison</caption>
         <thead>
             <tr>
-                <th>Feature</th>
-                <th>Account A</th>
-                <th>Account B</th>
-                <th>Account C</th>
+                <th colspan="4">ACME Wildwest Services</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <th class="headcol">Basic</th>
+                <th class="headcol">Premium</th>
+                <th class="headcol">Plus</th>
             </tr>
         </thead>
+
         <tbody>
+
             <tr>
-                <td>Feature 1</td>
+                <th>Feature 1</th>
                 <td>✔️</td>
                 <td>✔️</td>
                 <td>✔️</td>
             </tr>
             <tr>
-                <td>Feature 2</td>
+                <th>Feature 2</th>
                 <td>❌</td>
                 <td>✔️</td>
                 <td>✔️</td>
             </tr>
             <tr>
-                <td>Feature 2</td>
+                <th>Feature 3</th>
                 <td>❌</td>
                 <td>❌</td>
                 <td>✔️</td>
             </tr>
         </tbody>
+        <tfoot>
+
+        </tfoot>
     </table>
 </body>
 
