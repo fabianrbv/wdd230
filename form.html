@@ -35,12 +35,13 @@
                 title="Password must be at least 8 characters and include at least one number, one lowercase letter, and one uppercase letter">
 
             <label for="passwordConfirm">Confirm Password</label>
-            <input type="password" id="passwordConfirm" name="passwordConfirm" required
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Passwords must match">
+            <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+            <p id="passwordMatchError" class="error"></p>
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu"
                 title="A valid BYUI email address">
+            <p id="emailError" class="error"></p>
 
             <label for="pageRating">Page Rating</label>
             <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1"
@@ -55,12 +56,7 @@
         <p>&#169; <span id="currentYear"></span> Fabian Betancourt | Colombia</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/form.js"></script>
 </body>
-
-<script>
-    function updateRatingValue(value) {
-        document.getElementById('ratingValue').innerText = value;
-    }
-</script>
 
 </html>
