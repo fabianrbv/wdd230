@@ -9,6 +9,11 @@
     padding: 0;
 }
 
+#formmessage {
+    visibility: none;
+    text-align: center;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--secondary-color);
