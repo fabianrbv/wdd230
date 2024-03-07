@@ -2,44 +2,13 @@ function updateRatingValue(value) {
     document.getElementById('ratingValue').innerText = value;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const passwordInput = document.getElementById('password');
-    const passwordConfirmInput = document.getElementById('passwordConfirm');
-    const passwordMatchError = document.getElementById('passwordMatchError');
+const contactForm = document.getElementById('contactForm');
+const password = document.getElementById('password');
+const passwordConfirm = document.getElementById('passwordConfirm');
 
-    function validatePasswordMatch() {
-        const password = passwordInput.value;
-        const passwordConfirm = passwordConfirmInput.value;
-
-        if (password !== passwordConfirm) {
-            passwordMatchError.textContent = 'Passwords do not match';
-            passwordInput.value = '';
-            passwordConfirmInput.value = '';
-            passwordInput.focus();
-        } else {
-            passwordMatchError.textContent = '';
-        }
+contactForm.addEventListener('submit', (event) => {
+    if (password.value !== passwordConfirm.value) {
+        event.preventDefault();
+        document.getElementById('error').textContent = 'Passwords do not match.';
     }
-
-    passwordInput.addEventListener('input', validatePasswordMatch);
-    passwordConfirmInput.addEventListener('input', validatePasswordMatch);
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const emailInput = document.getElementById('email');
-    const emailError = document.getElementById('emailError');
-
-    function validateEmail() {
-        const email = emailInput.value;
-
-        if (!email.match(/^[a-zA-Z0-9._%+-]+@byui\.edu$/)) {
-            emailError.textContent = 'Enter a valid byui.edu email address';
-            emailInput.value = '';
-            emailInput.focus();
-        } else {
-            emailError.textContent = '';
-        }
-    }
-
-    emailInput.addEventListener('input', validateEmail);
 });
