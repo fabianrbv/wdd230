@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #19505d;
+    --secondary-color: #19515d56;
+    --text-color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +11,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #19515d56;
+    background-color: var(--secondary-color);
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -14,8 +20,8 @@ body {
 }
 
 header {
-    background-color: #19505d;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,8 +32,15 @@ header {
     margin: 0 auto;
 }
 
+img {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    padding-right: 1em;
+}
+
 nav {
-    background-color: #19505d;
+    background-color: var(--primary-color);
     margin: 0 auto;
     max-width: 600px;
 }
@@ -38,12 +51,60 @@ nav ul {
 
 nav a {
     display: block;
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: overline;
+}
+
+@media (max-width: 640px) {
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+        color: #fff;
+    }
+
+    #menu.open::before {
+        content: "X";
+        color: #fff;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        background-color: #19505d;
+        color: #fff;
+    }
+
+    .navigation.open {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+/* Larger Views ******************************/
 @media (min-width: 640px) {
     nav ul {
         display: flex;
@@ -59,8 +120,62 @@ nav a {
     }
 }
 
+.navigation {
+    flex-direction: row;
+    max-width: 767px;
+
+}
+
+.navigation a {
+    display: block;
+    flex: 1 1 100%;
+}
+
 footer {
     text-align: center;
-    background-color: #19505d;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"] {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #19505d80;
+}
+
+.error {
+    color: red;
+    margin-bottom: 1rem;
 }
