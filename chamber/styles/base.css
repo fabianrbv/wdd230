@@ -50,7 +50,6 @@ li {
 	display: block;
 }
 
-/* Nuevos estilos para cumplir con los requisitos */
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -61,29 +60,22 @@ li {
 	padding: 20px;
 }
 
-/* En el bloque de estilos del sidebar */
 .sidebar-content {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-center;
 	text-align: center;
 	width: 100%;
-	/* Ajustar el ancho al 100% del contenedor */
 	max-width: 500px;
-	/* Establecer un ancho máximo para controlar el tamaño */
 	height: auto;
 	margin-bottom: 20px;
-	margin-left: 20px;
+	padding: 55px;
 }
 
-/* Efecto hover para las imágenes en la galería */
 .gallery img {
 	width: 100%;
-	/* Ajustar el ancho al 100% del contenedor */
 	max-width: 500px;
-	/* Establecer un ancho máximo para controlar el tamaño */
 	height: auto;
-	/* Mantener la proporción de aspecto original */
 
 	transition: transform 0.3s;
 }
@@ -91,9 +83,6 @@ li {
 .gallery img:hover {
 	transform: scale(1.1);
 }
-
-/* Resto de tu archivo CSS actual */
-
 
 #container {
 	background-color: #f8f8f8;
@@ -197,6 +186,7 @@ nav a:hover {
 
 /* Main Content Styles */
 main {
+	background-color: #457b9d27;
 	display: block;
 	text-align: center;
 	font-family: 'Lato', Helvetica, sans-serif;
@@ -227,20 +217,35 @@ main {
 	margin-top: 20px;
 }
 
-/* Events Section Styles */
-.events {
-	padding: 20px;
-	margin-top: 20px;
+.carddiv {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	max-width: 767px;
 }
 
-.events ul {
+.card p {
+	padding: 5px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 8px;
+	padding: 30px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 10px;
+
+}
+
+.card ul {
 	list-style-type: none;
 }
 
-/* Weather Section Styles */
-.weather {
-	padding: 20px;
-	margin-top: 20px;
+.card li {
+	padding: 4px;
+}
+
+.card h3 {
+	color: #333;
 }
 
 /* Footer Styles */
@@ -322,6 +327,11 @@ footer a {
 		width: 30px;
 		height: auto;
 		margin-right: 10px;
+	}
+
+	.grid-container {
+		grid-template-columns: 1fr;
+		/* Cambia a una sola columna en pantallas pequeñas */
 	}
 }
 

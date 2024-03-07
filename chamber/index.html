@@ -86,33 +86,35 @@
             <a href="#" class="join-button">Join Now</a>
         </section>
 
-        <section class="events">
-            <!-- Current events section goes here -->
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Event 1</li>
-                <li>Event 2</li>
-                <!-- Add more events as needed -->
-            </ul>
-        </section>
+        <div class="carddiv">
+            <section class="card">
+                <!-- Current events section goes here -->
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Event 1</li>
+                    <li>Event 2</li>
+                    <!-- Add more events as needed -->
+                </ul>
+            </section>
 
-        <section class="weather">
-            <h2>Weather</h2>
-            <div id="databox">
-                <span>Temperature Fahrenheit:
-                    <input type="number" id="temperature">
-                </span>
+            <section class="card">
+                <h2>Weather</h2>
+                <div id="databox">
+                    <span>Temperature Fahrenheit:
+                        <input type="number" id="temperature">
+                    </span>
+                    <br>
+                    <span>Wind Speed in MPH: <input type="number" id="windSpeed">
+                    </span>
+                    <br />
+                    <button type="button" onclick="calculateWindChill()">Calculate Wind Chill</button>
+                </div>
                 <br>
-                <span>Wind Speed in MPH: <input type="number" id="windSpeed">
-                </span>
-                <br />
-                <button type="button" onclick="calculateWindChill()">Calculate Wind Chill</button>
-            </div>
-            <br>
-            <div id="weather-section">
-                <p>Wind Chill: <span id="result">N/A</span></p>
-            </div>
-        </section>
+                <div id="weather-section">
+                    <p>Wind Chill: <span id="result">N/A</span></p>
+                </div>
+            </section>
+        </div>
 
     </main>
 

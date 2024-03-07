@@ -188,18 +188,6 @@ main {
 
 .card p {
     padding: 5px;
-    /* Ajusta el valor según tus preferencias */
-}
-
-.navigation {
-    flex-direction: row;
-    max-width: 767px;
-
-}
-
-.navigation a {
-    display: block;
-    flex: 1 1 100%;
 }
 
 .card {
@@ -220,6 +208,17 @@ main {
 
 .card h3 {
     color: #333;
+}
+
+.navigation {
+    flex-direction: row;
+    max-width: 767px;
+
+}
+
+.navigation a {
+    display: block;
+    flex: 1 1 100%;
 }
 
 ul.course-links {
