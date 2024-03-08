@@ -1,0 +1,67 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header with a background color, center text, and add padding */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Style the main section with a container and add padding */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the footer with a background color, center text, and add padding */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Style the cards container using CSS Grid */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Style the individual cards with a border, padding, and a white background */
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Style the heading in each card */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Style the portrait image in each card */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Apply additional styles as needed */
