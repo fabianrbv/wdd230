@@ -2,7 +2,6 @@
 
 /* Reset some default styles */
 body,
-p,
 ul,
 li {
 	margin: 0;
@@ -13,6 +12,11 @@ li {
 	margin-top: 10px;
 	color: var(--accent2-color);
 	text-align: center;
+}
+
+#text p {
+	margin-left: 20rem;
+	margin-right: 20rem;
 }
 
 .container {
