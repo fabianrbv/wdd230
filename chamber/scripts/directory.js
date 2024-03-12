@@ -1,4 +1,4 @@
-const linksURL = "https://fabianrbv.github.io/wdd230/chamber/data/members.json";
+const linksURL = "https://github.com/fabianrbv/wdd230/blob/main/chamber/data/members.json";
 
 async function getMembers() {
     const response = await fetch(linksURL);
