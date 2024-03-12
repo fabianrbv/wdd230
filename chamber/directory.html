@@ -50,12 +50,17 @@
 
         <div class="toggle-view">
             <label>
-                <input type="radio" name="view" id="list" value="list"> List View
+                <input type="radio" name="view" id="list" value="row" checked> List View
             </label>
             <label>
-                <input type="radio" name="view" id="grid" value="grid" checked> Grid View
+                <input type="radio" name="view" id="grid" value="column"> Grid View
             </label>
         </div>
+
+        <div id="directoryContainer">
+            <div id="directoryCards" class="grid-view"></div>
+        </div>
+
 
     </main>
 

@@ -6,14 +6,17 @@ async function getMembers() {
     displayMembers(data.members, 'row');
 }
 
-document.querySelectorAll('input[name="view"]').forEach((radio) => {
-    radio.addEventListener('change', () => selectView(radio.value));
-});
-
+var listImage = document.getElementById("list");
+var gridImage = document.getElementById("grid");
 const directoryCards = document.querySelector('#directoryCards');
 const directoryContainer = document.querySelector('#directoryContainer');
+
+
 const list = document.querySelector('#list');
 const grid = document.querySelector('#grid');
+list.addEventListener('click', () => selectView('row'));
+grid.addEventListener('click', () => selectView('column'));
+
 
 const displayMembers = (members, view) => {
     console.log(members);
@@ -76,11 +79,11 @@ const displayMembers = (members, view) => {
 
 function selectView(view) {
     if (view === 'row') {
-        directoryCards.style.gridTemplateColumns = 'repeat(auto-fit, minmax(350px, 1fr)';
-        // alert("row");
+        directoryCards.classList.remove('grid-view');
+        directoryCards.classList.add('list-view');
     } else {
-        directoryCards.style.gridTemplateColumns = '1fr';
-        // alert("column");
+        directoryCards.classList.remove('list-view');
+        directoryCards.classList.add('grid-view');
     }
 }
 
