@@ -120,7 +120,17 @@ body.active {
 
 body.active {
 	background-color: rgb(23, 23, 23);
+}
 
+body.active .card {
+	background-color: rgb(66, 66, 66);
+	color: #fff;
+}
+
+body.active .membership-benefits,
+body.active .membership-benefits h2 {
+	background-color: rgb(66, 66, 66);
+	color: #fff;
 }
 
 /* Global Styles */
@@ -130,7 +140,7 @@ body {
 
 /* Header Styles */
 header {
-	background-color: #457B9D;
+	background-color: #457b9d;
 	color: #ffffff;
 	display: flex;
 	align-items: center;
@@ -167,6 +177,11 @@ nav ul li {
 	display: flex;
 	list-style-type: none;
 	flex: 1 1 auto;
+}
+
+li {
+	list-style-type: none;
+
 }
 
 nav a {
@@ -260,6 +275,41 @@ footer {
 
 footer a {
 	text-decoration: none;
+}
+
+.form-and-benefits-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 20px;
+	flex-wrap: wrap;
+}
+
+.form-container {
+	flex: 1;
+	margin-right: 20px;
+	padding: 4%;
+}
+
+.membership-benefits {
+	flex: 1;
+	background-color: #f4f4f4;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.membership-benefits h2 {
+	color: #000000;
+}
+
+.membership-benefits ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.membership-benefits li {
+	margin-bottom: 10px;
 }
 
 /* small Views ******************************/
