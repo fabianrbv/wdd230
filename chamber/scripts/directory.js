@@ -6,17 +6,14 @@ async function getMembers() {
     displayMembers(data.members, 'row');
 }
 
-var listImage = document.getElementById("list");
-var gridImage = document.getElementById("grid");
+document.querySelectorAll('input[name="view"]').forEach((radio) => {
+    radio.addEventListener('change', () => selectView(radio.value));
+});
+
 const directoryCards = document.querySelector('#directoryCards');
 const directoryContainer = document.querySelector('#directoryContainer');
-
-
 const list = document.querySelector('#list');
 const grid = document.querySelector('#grid');
-list.addEventListener('click', () => selectView('row'));
-grid.addEventListener('click', () => selectView('column'));
-
 
 const displayMembers = (members, view) => {
     console.log(members);

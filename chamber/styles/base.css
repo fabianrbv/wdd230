@@ -337,6 +337,12 @@ form input.submitBtn {
 	max-width: 18rem;
 }
 
+#directoryCards {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
 /* small Views *****************************/
 
 @media (max-width: 640px) {
