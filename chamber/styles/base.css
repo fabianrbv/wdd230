@@ -376,28 +376,21 @@ form input.submitBtn {
 .banner {
 	display: none;
 	background-color: #f8d7da;
-	/* Color de fondo para el banner */
 	color: #721c24;
-	/* Color de texto para el banner */
 	padding: 20px;
 	margin-bottom: 20px;
 	border: 1px solid #f5c6cb;
-	/* Borde para el banner */
 	border-radius: 5px;
 }
 
-/* Estilo para el botón de cerrar el banner */
 #close-banner {
 	background-color: transparent;
 	border: none;
 	color: #721c24;
-	/* Color del texto del botón */
 	cursor: pointer;
 	margin-left: 10px;
-	/* Margen izquierdo para separar el botón del texto */
 }
 
-/* Mostrar el banner solo en lunes, martes y miércoles */
 .banner.show {
 	display: block;
 }
