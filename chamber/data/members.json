@@ -1,0 +1,49 @@
+{
+    "members": [
+        {
+            "name": "Company A",
+            "address": "123 Main St, Cityville",
+            "phone": "+1 123-456-7890",
+            "website": "http://www.companyA.com",
+            "image": "companyA.jpg",
+            "membership_level": "Gold",
+            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company B",
+            "address": "456 Main St, Cityville",
+            "phone": "+1 123-456-7891",
+            "website": "http://www.companyB.com",
+            "image": "companyB.jpg",
+            "membership_level": "Bronze",
+            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company C",
+            "address": "789 Main St, Cityville",
+            "phone": "+1 123-456-7892",
+            "website": "http://www.companyC.com",
+            "image": "companyC.jpg",
+            "membership_level": "NP",
+            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company D",
+            "address": "101 Main St, Cityville",
+            "phone": "+1 123-456-7893",
+            "website": "http://www.companyD.com",
+            "image": "companyD.jpg",
+            "membership_level": "Silver",
+            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company A",
+            "address": "012 Main St, Cityville",
+            "phone": "+1 123-456-7894",
+            "website": "http://www.companyD.com",
+            "image": "companyD.jpg",
+            "membership_level": "Gold",
+            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ]
+}

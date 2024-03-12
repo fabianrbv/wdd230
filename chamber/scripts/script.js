@@ -74,3 +74,50 @@ function displayMessage() {
 // Call the function
 displayMessage();
 
+//json homework
+
+document.addEventListener("DOMContentLoaded", function () {
+	const membersContainer = document.getElementById("members-container");
+	const viewToggle = document.querySelectorAll('input[name="view"]');
+
+	// Fetch and display members from JSON file
+	function displayMembers(viewType) {
+		fetch("data/members.json")
+			.then(response => response.json())
+			.then(data => {
+				membersContainer.innerHTML = ""; // Clear existing content
+
+				data.members.forEach(member => {
+					const memberElement = document.createElement(viewType === "grid" ? "div" : "li");
+					memberElement.className = viewType === "grid" ? "member-card" : "member-list-item";
+
+					// Customize the member card or list item structure based on your needs
+					memberElement.innerHTML = `
+			  <h2>${member.name}</h2>
+			  <p>Address: ${member.address}</p>
+			  <p>Phone: ${member.phone}</p>
+			  <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+			  <img src="images/${member.image}" alt="${member.name}" />
+			  <p>Membership Level: ${member.membership_level}</p>
+			  <p>Other Information: ${member.other_information}</p>
+			`;
+
+					membersContainer.appendChild(memberElement);
+				});
+			});
+	}
+
+	// Initial display
+	displayMembers("grid");
+
+	// Toggle view event
+	viewToggle.forEach(input => {
+		input.addEventListener("change", function () {
+			const viewType = this.value;
+			membersContainer.className = viewType + "-view";
+			displayMembers(viewType);
+		});
+	});
+});
+
+
