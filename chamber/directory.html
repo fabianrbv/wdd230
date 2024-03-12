@@ -47,21 +47,14 @@
     <img class="foto-fondo" src="images/fondocopia.jpg" alt="Chamber of Commerce Hero Image">
 
     <main>
-
-        <div class="toggle-view">
-            <label>
-                <input type="radio" name="view" id="list" value="row" checked> List View
-            </label>
-            <label>
-                <input type="radio" name="view" id="grid" value="column"> Grid View
-            </label>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
         </div>
-
-        <div id="directoryContainer">
-            <div id="directoryCards" class="grid-view"></div>
-        </div>
-
-
+        <hr>
+        <article id="display" class="grid">
+            <!-- Content will be dynamically added here -->
+        </article>
     </main>
 
     <footer>
