@@ -233,7 +233,7 @@ main {
 .carddiv {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	max-width: 767px;
+	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -350,4 +350,54 @@ form input.submitBtn {
 .navigation a {
 	display: block;
 	flex: 1 1 100%;
+}
+
+/* Forecast justification */
+
+.forecast-container {
+	display: flex;
+	gap: 10px;
+	padding: 10px;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+.forecast-item {
+	flex: 0 0 auto;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: calc(33.33% - 20px);
+	max-width: 150px;
+	box-sizing: border-box;
+}
+
+/* banner justification */
+
+.banner {
+	display: none;
+	background-color: #f8d7da;
+	/* Color de fondo para el banner */
+	color: #721c24;
+	/* Color de texto para el banner */
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #f5c6cb;
+	/* Borde para el banner */
+	border-radius: 5px;
+}
+
+/* Estilo para el botón de cerrar el banner */
+#close-banner {
+	background-color: transparent;
+	border: none;
+	color: #721c24;
+	/* Color del texto del botón */
+	cursor: pointer;
+	margin-left: 10px;
+	/* Margen izquierdo para separar el botón del texto */
+}
+
+/* Mostrar el banner solo en lunes, martes y miércoles */
+.banner.show {
+	display: block;
 }

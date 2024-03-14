@@ -111,17 +111,27 @@
         </div>
         <div class="carddiv">
             <section class="card">
-                <!-- Current events section goes here -->
                 <h2>Upcoming Events</h2>
-                <ul>
-                    <li>Event 1</li>
-                    <li>Event 2</li>
-                    <!-- Add more events as needed -->
-                </ul>
+                <p>Meet and Greet. Date: this Wednesday. Time: 7:00 p.m.!</p>
+                <p>Networking Mixer. Date: March 18th. Time: 6:00 p.m.</p>
+                <p>Small Business Workshop. Date: March 25th. Time: 10:00 a.m.</p>
+
+
+                <div id="meet-greet-banner" class="banner">
+                    <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+                    <button id="close-banner">Close</button>
+                </div>
             </section>
 
             <section class="card">
                 <h2>Weather</h2>
+                <p>The current temperature in Bogotá, Colombia is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <h4>A 3-day temperature forecast</h4>
+                <div id="weather-forecast" class="forecast-container"></div>
                 <div id="databox">
                     <span>Temperature Fahrenheit:
                         <input type="number" id="temperature">
@@ -150,6 +160,7 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/imageLabels.js"></script>
     <script src="scripts/directory.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
