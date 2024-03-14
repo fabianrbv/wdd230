@@ -31,9 +31,11 @@ function displayMembers(members, view) {
 
         img.src = member.image;
         img.alt = member.name;
+        img.width = 120; // Establecer el ancho de la imagen
+        img.height = 100; // Establecer la altura de la imagen
 
         h3.textContent = member.name;
-        p.textContent = member.other_information;
+        p.textContent = `Address: ${member.address}\nPhone: ${member.phone}\nMembership Level: ${member.membership_level}`;
         a.href = member.website;
         a.textContent = "Details";
 
@@ -51,6 +53,7 @@ function displayMembers(members, view) {
         display.classList.remove('list');
     }
 }
+
 
 // Cargar datos iniciales
 loadData();
