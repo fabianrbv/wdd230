@@ -26,22 +26,28 @@ function displayMembers(members, view) {
         const section = document.createElement('section');
         const img = document.createElement('img');
         const h3 = document.createElement('h3');
-        const p = document.createElement('p');
+        const addressDiv = document.createElement('div');
+        const phoneDiv = document.createElement('div');
+        const membershipDiv = document.createElement('div');
         const a = document.createElement('a');
 
         img.src = member.image;
         img.alt = member.name;
-        img.width = 120; // Establecer el ancho de la imagen
+        img.width = 125; // Establecer el ancho de la imagen
         img.height = 100; // Establecer la altura de la imagen
 
         h3.textContent = member.name;
-        p.textContent = `Address: ${member.address}\nPhone: ${member.phone}\nMembership Level: ${member.membership_level}`;
+        addressDiv.textContent = `Address: ${member.address}`;
+        phoneDiv.textContent = `Phone: ${member.phone}`;
+        membershipDiv.textContent = `Membership Level: ${member.membership_level}`;
         a.href = member.website;
-        a.textContent = "Details";
+        a.textContent = "Website"; // Cambiar el texto del enlace
 
         section.appendChild(h3);
         section.appendChild(img);
-        section.appendChild(p);
+        section.appendChild(addressDiv);
+        section.appendChild(phoneDiv);
+        section.appendChild(membershipDiv);
         section.appendChild(a);
 
         display.appendChild(section);
@@ -52,6 +58,11 @@ function displayMembers(members, view) {
     } else {
         display.classList.remove('list');
     }
+}
+
+function toggleView(view) {
+    display.className = "display " + view; // Agregar la clase view al contenedor display
+    loadData(); // Cargar datos basados en la vista seleccionada
 }
 
 
