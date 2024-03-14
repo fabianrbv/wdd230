@@ -5,7 +5,7 @@
             "address": "Cra. 68b #24-39, Fontibón",
             "phone": "+57 3054829112",
             "website": "https://www.exito.com/",
-            "image": "exito.png",
+            "image": "images/exito.png",
             "membership_level": "Gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "Av. La Esperanza #43, Bogotá",
             "phone": "+57 13907603",
             "website": "https://www.coomeva.com.co/",
-            "image": "coomeva.jpg",
+            "image": "images/coomeva.jpg",
             "membership_level": "Bronze"
         },
         {
@@ -21,7 +21,7 @@
             "address": "Avenida La Esperanza # 68C-25, Bogotá, Cundinamarca",
             "phone": "+57 14059090",
             "website": "https://www.larebajavirtual.com/",
-            "image": "larebaja.png",
+            "image": "images/larebaja.png",
             "membership_level": "NP"
         },
         {
@@ -29,7 +29,7 @@
             "address": "C.C. Salitre Plaza, Cra. 68b #24-39 Local 113, Fontibón, Bogotá, Cundinamarca",
             "phone": "+57 12951637",
             "website": "http://www.arturocalle.com/",
-            "image": "arturocalle.jpg",
+            "image": "images/arturocalle.jpg",
             "membership_level": "Silver"
         },
         {
@@ -37,7 +37,7 @@
             "address": "278A06_GM_Ciudad Salitre 3ra Etapa, Bogotá",
             "phone": "+57 018000521888",
             "website": "http://www.aratiendas.com/",
-            "image": "arapng",
+            "image": "images/arapng",
             "membership_level": "Gold"
         }
     ]
