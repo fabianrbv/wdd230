@@ -39,8 +39,8 @@ function displayMembers(members, view) {
         a.href = member.website;
         a.textContent = "Details";
 
-        section.appendChild(img);
         section.appendChild(h3);
+        section.appendChild(img);
         section.appendChild(p);
         section.appendChild(a);
 
