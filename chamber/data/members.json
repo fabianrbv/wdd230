@@ -1,49 +1,44 @@
 {
     "members": [
         {
-            "name": "Company A",
-            "address": "123 Main St, Cityville",
-            "phone": "+1 123-456-7890",
-            "website": "http://www.companyA.com",
-            "image": "companyA.jpg",
-            "membership_level": "Gold",
-            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "name": "Éxito",
+            "address": "Cra. 68b #24-39, Fontibón",
+            "phone": "+57 3054829112",
+            "website": "https://www.exito.com/",
+            "image": "exito.png",
+            "membership_level": "Gold"
         },
         {
-            "name": "Company B",
-            "address": "456 Main St, Cityville",
-            "phone": "+1 123-456-7891",
-            "website": "http://www.companyB.com",
-            "image": "companyB.jpg",
-            "membership_level": "Bronze",
-            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "name": "Coomeva",
+            "address": "Av. La Esperanza #43, Bogotá",
+            "phone": "+57 13907603",
+            "website": "https://www.coomeva.com.co/",
+            "image": "coomeva.jpg",
+            "membership_level": "Bronze"
         },
         {
-            "name": "Company C",
-            "address": "789 Main St, Cityville",
-            "phone": "+1 123-456-7892",
-            "website": "http://www.companyC.com",
-            "image": "companyC.jpg",
-            "membership_level": "NP",
-            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "name": "LA REBAJA",
+            "address": "Avenida La Esperanza # 68C-25, Bogotá, Cundinamarca",
+            "phone": "+57 14059090",
+            "website": "https://www.larebajavirtual.com/",
+            "image": "larebaja.png",
+            "membership_level": "NP"
         },
         {
-            "name": "Company D",
-            "address": "101 Main St, Cityville",
-            "phone": "+1 123-456-7893",
-            "website": "http://www.companyD.com",
-            "image": "companyD.jpg",
-            "membership_level": "Silver",
-            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "name": "Arturo Calle",
+            "address": "C.C. Salitre Plaza, Cra. 68b #24-39 Local 113, Fontibón, Bogotá, Cundinamarca",
+            "phone": "+57 12951637",
+            "website": "http://www.arturocalle.com/",
+            "image": "arturocalle.jpg",
+            "membership_level": "Silver"
         },
         {
-            "name": "Company A",
-            "address": "012 Main St, Cityville",
-            "phone": "+1 123-456-7894",
-            "website": "http://www.companyD.com",
-            "image": "companyD.jpg",
-            "membership_level": "Gold",
-            "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "name": "Ara",
+            "address": "278A06_GM_Ciudad Salitre 3ra Etapa, Bogotá",
+            "phone": "+57 018000521888",
+            "website": "http://www.aratiendas.com/",
+            "image": "arapng",
+            "membership_level": "Gold"
         }
     ]
 }

@@ -1,4 +1,4 @@
-const membersURL = "https://github.com/fabianrbv/wdd230/chamber/data/members.json";
+const membersURL = "https://fabianrbv.github.io/wdd230/chamber/data/members.json";
 
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
@@ -8,8 +8,8 @@ gridButton.addEventListener("click", () => toggleView("grid"));
 listButton.addEventListener("click", () => toggleView("list"));
 
 function toggleView(view) {
-    display.className = view; // Set the class name to the desired view
-    loadData(); // Load data based on the selected view
+    display.className = view; // Establecer la clase del contenedor display
+    loadData(); // Cargar datos basados en la vista seleccionada
 }
 
 function loadData() {
@@ -20,7 +20,7 @@ function loadData() {
 }
 
 function displayMembers(members, view) {
-    display.innerHTML = ""; // Clear previous content
+    display.innerHTML = ""; // Limpiar contenido anterior
 
     members.forEach(member => {
         const section = document.createElement('section');
@@ -52,5 +52,5 @@ function displayMembers(members, view) {
     }
 }
 
-// Load initial data
+// Cargar datos iniciales
 loadData();
