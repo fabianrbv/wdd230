@@ -1,7 +1,7 @@
-const linksURL = "https://fabianrbv.github.io/wdd230/chamber/data/members.json";
+const membersURL = "https://fabianrbv.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {
-    const response = await fetch(linksURL);
+    const response = await fetch(membersURL);
     const data = await response.json();
 
     const goldMembers = filterMembersByMembershipLevel(data, "Gold");
