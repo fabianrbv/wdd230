@@ -5,7 +5,7 @@ async function getMembers() {
     const data = await response.json();
 
     const goldMembers = filterMembersByMembershipLevel(data, "Gold");
-    //console.log(goldMembers);
+    // console.log(goldMembers);
     displayMembers(goldMembers);
     displayRandomMember(goldMembers);
 }
