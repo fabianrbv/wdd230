@@ -25,11 +25,19 @@
             "membership_level": "NP"
         },
         {
+            "name": "Teleperformance",
+            "address": "92, Ac. 26 #32, Bogotá",
+            "phone": "+57 6014049080",
+            "website": "https://tpjobscolombia.com/",
+            "image": "images/arturocalle.jpg",
+            "membership_level": "Gold"
+        },
+        {
             "name": "Arturo Calle",
             "address": "Cra. 68b #24-39 Local 113, Fontibón, Bogotá, Cundinamarca",
             "phone": "+57 12951637",
             "website": "http://www.arturocalle.com/",
-            "image": "images/arturocalle.jpg",
+            "image": "images/teleperformance.png",
             "membership_level": "Silver"
         },
         {
