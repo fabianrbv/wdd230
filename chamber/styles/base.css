@@ -263,10 +263,21 @@ main {
 	color: #333;
 }
 
+/* thanks page */
+
+.container01 {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 100px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer Styles */
 footer {
 	background-color: #457B9D;
-	margin-top: 20px;
+	margin-top: 0px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -275,6 +286,13 @@ footer {
 
 footer a {
 	text-decoration: none;
+}
+
+/* form */
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .form-and-benefits-container {
@@ -306,9 +324,9 @@ textarea {
 }
 
 .membership-benefits {
-	flex: 1;
+	height: 45%;
 	background-color: #f4f4f4;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

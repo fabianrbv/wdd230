@@ -5,15 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You for Your Submission</title>
-    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Thank You for Your Submission!</h1>
-        <p>We appreciate you taking the time to fill out the form.</p>
-        <p>If you have any further questions, feel free to <a href="index.html">contact us</a>.</p>
-    </div>
+    <header>
+        <img src="images/logo.webp" alt="page logo">
+        <h1>Bogotá Chamber of Commerce</h1>
+        <nav class="social-images">
+            <img src="images/facebook.png" alt="facebook-logo">
+            <img src="images/instagram.png" alt="instagram-logo">
+            <img src="images/twitter.png" alt="twitter-logo">
+        </nav>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div id="container">
+            <div class="toggle"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container01">
+            <h1>Thank You for Your Submission!</h1>
+            <p>We appreciate you taking the time to fill out the form.</p>
+            <p>If you have any further questions, feel free to <a href="index.html">contact us</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact Us: Bogota-Chamber-of-Commerce.com | Phone: 123-456-7890</p>
+        <p>&#169; <span id="currentYear"></span> Fabian Betancourt | WDD 230 Project | Last Modified:</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
