@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reservations | Scoots Motor Scooter Rental Company</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/image.webp" alt="page logo">
+        <h1>Scoots Motor Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>Email: info@scoots.com</p>
+            <p>Phone: 1-800-288-0000</p>
+        </div>
+    </header>
+    <main>
+        <h2>Rental Services and Agreements</h2>
+        <ul class="Agreements">
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+        </ul>
+        <h2>Make a Reservation</h2>
+        <div class="grid">
+            <div class="form-and-benefits-container">
+                <form action="thankyou.html" method="get" id="reservationForm">
+                    <label for="rentalType">Rental Type:</label>
+                    <select id="rentalType" name="rentalType" required>
+                        <option value="">Choose a rental type</option>
+                        <option value="hondaMetropolitan">Honda Metro (49cc)</option>
+                        <option value="hondaDio">Honda Dio (110cc)</option>
+                        <option value="hondaPcx150">Honda PCX150 (150cc)</option>
+                        <option value="hondaPioneer1000">Honda Pioneer 1000</option>
+                        <option value="JeepWrangler4d">Jeep Wrangler 4 doors</option>
+                        <option value="JeepWrangler2s">Jeep Wrangler 2 doors</option>
+                    </select>
+                    <br>
+                    <label for="pickupDate">Pickup Date:</label>
+                    <input type="date" id="pickupDate" name="pickupDate" required>
+                    <br>
+                    <label for="returnDate">Return Date:</label>
+                    <input type="date" id="returnDate" name="returnDate" required>
+                    <br>
+                    <label for="rentalNumber">Number of Rentals:</label>
+                    <input type="number" id="rentalNumber" name="rentalNumber" min="1" required>
+                    <br>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    <br>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="homeState">Home State or Country:</label>
+                    <input type="text" id="homeState" name="homeState" required>
+                    <br>
+                    <label for="cruiseLine">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruiseLine" name="cruiseLine">
+                    <br>
+                    <label for="specialAccommodations">Special Accommodations/Comments:</label>
+                    <textarea id="specialAccommodations" name="specialAccommodations"></textarea>
+                    <br>
+                    <input type="submit" value="Submit Reservation">
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2022 Scoots Motor Scooter Rental Company</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

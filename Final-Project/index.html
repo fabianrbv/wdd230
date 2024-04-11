@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Motor Company</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development, Fabian Ricardo Betancourt Vargas, Final Project">
+    <meta name="author" content="Fabian Betancourt">
+    <meta property="og:title" content="Scoots Motor Company">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.barcelo.com/guia-turismo/wp-content/uploads/2021/02/riviera-maya-cozumel-pal.jpg">
+    <meta property="og:url" content="https://fabianrbv.github.io/wdd230/Final-Project/index.html">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/image.webp" alt="page logo">
+        <h1>Scoots Motor Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>Email: info@scoots.com</p>
+            <p>Phone: 1-800-288-0000</p>
+        </div>
+    </header>
+    <main>
+        <div id="message" class="closeable-message">
+            <span id="temp-max"></span>
+            <button id="close-btn">&times;</button>
+        </div>
+        <img src="images/Cozumel.webp" alt="cozumelimage">
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div id="weather">
+                <p>Current temperature: <span id="current-temperature"></span></p>
+                <p>Current humidity: <span id="current-humidity"></span></p>
+                <p>Tomorrow's temperature at 15:00: <span id="tomorrow-temperature"></span></p>
+                <p>Current weather: <span id="current-weather"></span></p>
+                <figure>
+                    <img id="weather-icon" src="icon" alt="Weather Icon">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </section>
+        <a href="reservations.html" class="btn">Reserva Ahora</a>
+        <br>
+        <br>
+        <img src="images/playa.webp" alt="playaimage">
+        <section class="rental-summary">
+            <h2>Rental Options</h2>
+            <ul>
+                <li>
+                    <h3>Honda Motor Scooters</h3>
+                    <ul>
+                        <li>Honda Metropolitan (49cc) - 1 person</li>
+                        <li>Honda Dio (110cc) - 2 person</li>
+                        <li>Honda PCX150 (149cc) - 2 person</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Side-by-Side ATVs</h3>
+                    <ul>
+                        <li>Honda Pioneer 1000 - 4 person</li>
+                        <li>Yamaha Rhino 1250 - 4 person</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Jeep-like vehicles</h3>
+                    <ul>
+                        <li>Nissan Patrol 200 - 6 person</li>
+                        <li>Toyota Fortuner 2.4L - 7 person</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <img src="images/moto.webp" alt="motoimage">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Scoots Motor Scooter Rental Company</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png"
+                    alt="Facebook"></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png"
+                    alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
